@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tên của bạn | Bio</title>
+<meta name="description" content="Trang giới thiệu cá nhân">
+<style>
+  :root{
+    --bg:#0f1115; --card:#181b22; --text:#e8eaf0; --muted:#9aa3b2; --accent:#6ea8fe; --line:#262a33;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    background:var(--bg);color:var(--text);line-height:1.6;
+    min-height:100vh;display:flex;justify-content:center;padding:32px 16px;
+  }
+  .wrap{width:100%;max-width:560px}
+  header{text-align:center;margin-bottom:28px}
+  .avatar{
+    width:112px;height:112px;border-radius:50%;margin:0 auto 16px;
+    background:linear-gradient(135deg,#6ea8fe,#b388ff);
+    display:flex;align-items:center;justify-content:center;
+    font-size:44px;font-weight:700;color:#0f1115;overflow:hidden;
+  }
+  .avatar img{width:100%;height:100%;object-fit:cover}
+  h1{font-size:1.7rem}
+  .role{color:var(--accent);margin-top:2px;font-weight:500}
+  .about{color:var(--muted);margin-top:12px}
+  section{margin-top:28px}
+  h2{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+  .links{display:flex;flex-direction:column;gap:10px}
+  .links a{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:14px 18px;background:var(--card);border:1px solid var(--line);
+    border-radius:12px;color:var(--text);text-decoration:none;
+    transition:transform .15s,border-color .15s;
+  }
+  .links a:hover{transform:translateY(-2px);border-color:var(--accent)}
+  .links a span:last-child{color:var(--muted)}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tags span{padding:6px 14px;background:var(--card);border:1px solid var(--line);border-radius:999px;font-size:.9rem}
+  .project{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+  .project h3{font-size:1rem}
+  .project p{color:var(--muted);font-size:.92rem}
+  footer{text-align:center;color:var(--muted);font-size:.8rem;margin-top:36px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <!-- Muốn dùng ảnh: thay chữ "A" bằng <img src="avatar.jpg" alt="Ảnh đại diện"> -->
+    <div class="avatar">A</div>
+    <h1>Tên của bạn</h1>
+    <p class="role">Nghề nghiệp / Vai trò</p>
+    <p class="about">Viết 1-2 câu giới thiệu về bạn ở đây: bạn là ai, bạn làm gì, bạn đam mê điều gì.</p>
+  </header>
+
+  <section>
+    <h2>Liên kết</h2>
+    <div class="links">
+      <a href="https://github.com/anhvi9192a-oss" target="_blank" rel="noopener"><span>GitHub</span><span>↗</span></a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener"><span>Facebook</span><span>↗</span></a>
+      <a href="mailto:email@example.com"><span>Email</span><span>↗</span></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kỹ năng</h2>
+    <div class="tags">
+      <span>Kỹ năng 1</span><span>Kỹ năng 2</span><span>Kỹ năng 3</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Dự án</h2>
+    <div class="project"><h3>Tên dự án 1</h3><p>Mô tả ngắn về dự án.</p></div>
+    <div class="project"><h3>Tên dự án 2</h3><p>Mô tả ngắn về dự án.</p></div>
+  </section>
+
+  <footer>© 2026 Tên của bạn</footer>
+</div>
+</body>
+</html>
